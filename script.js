@@ -215,11 +215,11 @@ function updatebuttonContent(buttonpressed_id, button_value){
 
     function updateButtonColor(id){
         var green_button = document.getElementsByClassName('btn btn-success');
-        //Resetting the color of previous button
+        //Resetting the color of previous button, why index 0 because always only one button will be selected.
         if(green_button[0] != undefined){
             green_button[0].setAttribute('class', 'btn btn-primary');
         }
-
+        //Setting the button color to green
         document.getElementById(id).setAttribute('class', 'btn btn-success');
     }
 
